@@ -1,9 +1,27 @@
 [
   {
-    "name": "index",
     "path": "/",
-    "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_472f5d0a"
+    "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\layout",
+    "children": [
+      {
+        "path": "",
+        "name": "home",
+        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\home",
+        "_name": "_54f241a4"
+      },
+      {
+        "path": "login",
+        "name": "login",
+        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\login",
+        "_name": "_48e5620c"
+      },
+      {
+        "path": "register",
+        "name": "register",
+        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\login",
+        "_name": "_48e5620c"
+      }
+    ],
+    "_name": "_d540e48e"
   }
 ]
