@@ -87,7 +87,7 @@
 
 <script>
 export default {
-  name: "homeIndex",
+  name: "HomeIndex",
   components: {},
   props: {},
   data() {

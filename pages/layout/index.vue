@@ -3,32 +3,32 @@
     <!-- 顶部导航栏 -->
     <nav class="navbar navbar-light">
       <div class="container">
-        <nuxt-link class="navbar-brand" to="/">conduit</nuxt-link>
+        <nuxt-link class="navbar-brand" to="/">飞哥的博客</nuxt-link>
         <ul class="nav navbar-nav pull-xs-right">
           <li class="nav-item">
-            <!-- Add "active" class when you're on that page" -->
-            <nuxt-link class="nav-link active" to="/">Home</nuxt-link>
+            <!-- exact精确匹配路由 -->
+            <nuxt-link class="nav-link" exact to="/">主页</nuxt-link>
           </li>
           <li class="nav-item">
             <nuxt-link class="nav-link" to="/editor">
-              <i class="ion-compose"></i>&nbsp;New Post
+              <i class="ion-compose"></i>&nbsp;新增
             </nuxt-link>
           </li>
           <li class="nav-item">
             <nuxt-link class="nav-link" to="/settings">
-              <i class="ion-gear-a"></i>&nbsp;Settings
+              <i class="ion-gear-a"></i>&nbsp;设置
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/login">Sign in</nuxt-link>
+            <nuxt-link class="nav-link" to="/login">登录</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/register">Sign up</nuxt-link>
+            <nuxt-link class="nav-link" to="/register">注册</nuxt-link>
           </li>
           <li class="nav-item">
             <nuxt-link class="nav-link" to="/profile/1">
-              <img class="user-pic" src="" />
-              crystalangel
+              <img class="user-pic" src="../../static/images/user.jpg" />
+              袁修飞
             </nuxt-link>
           </li>
         </ul>
@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  name: "layoutIndex",
+  name: "LayoutIndex",
   components: {},
   props: {},
   data() {
