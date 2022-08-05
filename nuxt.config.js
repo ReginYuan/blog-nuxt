@@ -59,5 +59,20 @@ module.exports = {
         ]
       );
     }
+  },
+  modules: ["@nuxtjs/axios", "@nuxtjs/proxy"],
+  axios: {
+    //是否开启跨域
+    proxy: true
+  },
+  // 注册插件
+  plugins: [
+    '~/plugins/request.js',
+    '~/plugins/dayjs.js'
+  ],
+  proxy: {
+    "/api": {
+      target: "http://localhost:3000",
+    }
   }
 };

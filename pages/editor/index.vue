@@ -49,6 +49,8 @@
 </template>
 <script>
 export default {
+  // 在路由组件渲染之前，会先执行路由中间件
+  middleware: "authenticated",
   name: "EaditorIndex",
   data() {
     return {};

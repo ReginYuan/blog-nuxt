@@ -1,42 +1,42 @@
 [
   {
     "path": "/",
-    "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\layout",
+    "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\layout",
     "children": [
       {
         "path": "",
         "name": "home",
-        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\home"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\home"
       },
       {
         "path": "login",
         "name": "login",
-        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\login"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\login"
       },
       {
         "path": "register",
         "name": "register",
-        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\login"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\login"
       },
       {
         "path": "/profile/:username",
         "name": "profile",
-        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\profile"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\profile"
       },
       {
         "path": "/settings",
         "name": "settings",
-        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\settings"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\settings"
       },
       {
         "path": "/editor",
         "name": "editor",
-        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\editor"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\editor"
       },
       {
         "path": "/article/:slug",
         "name": "article",
-        "component": "D:\\\\Code\\\\SSR\\\\realworld-nuxt\\\\pages\\\\article"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\article"
       }
     ]
   }

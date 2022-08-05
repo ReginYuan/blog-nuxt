@@ -10,12 +10,7 @@
             <nuxt-link v-else to="/login">有账号?</nuxt-link>
           </p>
 
-          <ul class="error-messages" v-if="errors.length > 0">
-            <!-- <template v-for="(messages, filed) in errors">
-              <li v-for="(message, index) in messages" :key="inde">
-                {{ filed }}{{ message }}
-              </li> -->
-            <!-- </template> -->
+          <ul class="error-messages" v-if="errors && errors.length > 0">
             <li>
               {{ errors }}
             </li>
@@ -60,7 +55,11 @@
 </template>
 <script>
 import { login, register } from "@/api/user";
+// 仅在客户端加载 js-cookie 包
+const Cookie = process.client ? require("js-cookie") : undefined;
 export default {
+  // 在路由组件渲染之前，会先执行路由中间件
+  middleware: "noAuthenticated",
   name: "LoginIndex",
   data() {
     return {
@@ -82,17 +81,24 @@ export default {
     // 提交用户数据
     async onSubmit() {
       try {
-        const { data } = this.isLogin
-          ? await login({ user: this.user })
-          : await register({ user: this.user });
-        console.log("data", data);
-        if (data) {
+        let params = { ...this.user };
+        const { data: result } = this.isLogin
+          ? await login(params)
+          : await register(params);
+        console.log("result", result);
+        if (result.code == 200 && result.data.existence == "old") {
+          this.errors = result.msg;
+        } else if (result.code == 200 && result.data.existence == "new") {
+          this.$router.push("/login");
+        } else if (result.code == 200 && !result.existence) {
+          // 数据持久化，防止页面刷新数据丢失
+          let token = result.data && result.data.token;
+          Cookie.set("users", JSON.stringify({ ...result.data._doc, token }));
+          this.$store.commit("setUser", { ...result.data._doc, token });
           this.$router.push("/");
         }
       } catch (err) {
-        // console.log("请求失败", err);
-        console.dir(err);
-        this.errors = err.message;
+        this.errors = err;
       }
     },
   },

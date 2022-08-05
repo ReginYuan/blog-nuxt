@@ -54,7 +54,9 @@
 </template>
 <script>
 export default {
-  name:'SettingsIndex',
+  // 在路由组件渲染之前，会先执行路由中间件
+  middleware: "authenticated",
+  name: "SettingsIndex",
   data() {
     return {};
   },

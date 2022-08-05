@@ -1,15 +1,15 @@
-import request from "@/utils/request";
+import { request } from "@/plugins/request";
 
 /**
  * 登录功能
  * @param {*} params
  * @returns
  */
-export const login = (data) => {
+export const login = (params) => {
   return request({
-    method: "POST",
+    method: "post",
     url: "/api/users/login",
-    data
+    data: params
   });
 };
 /**
@@ -17,10 +17,23 @@ export const login = (data) => {
  * @param {*} params
  * @returns
  */
-export const register = (data) => {
+export const register = (params) => {
   return request({
-    method: "POST",
-    url: "/api/users",
-    data
+    method: "post",
+    url: "/api/users/sign",
+    data: params
+  });
+};
+
+/**
+ *
+ * @param params 登出
+ * @returns
+ */
+export const logout = (params) => {
+  return request({
+    url: "/api/users/logout",
+    method: "post",
+    params
   });
 };
