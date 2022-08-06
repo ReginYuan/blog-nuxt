@@ -204,7 +204,6 @@ export default {
         : await getArticleList(params);
     // 解构文章列表信息
     const { data: articleList } = articleData;
-    console.log("articleList", articleList);
     articleList.list.forEach((item) => (item.favoriteDisavled = false));
     // 获取标签接口
     const { data: tagsdata } = await getTagsList();
