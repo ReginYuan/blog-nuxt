@@ -6,46 +6,38 @@
       {
         "path": "",
         "name": "home",
-        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\home",
-        "_name": "_64a32f90"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\home"
       },
       {
         "path": "login",
         "name": "login",
-        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\login",
-        "_name": "_2ffb0ad8"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\login"
       },
       {
         "path": "register",
         "name": "register",
-        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\login",
-        "_name": "_2ffb0ad8"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\login"
       },
       {
         "path": "/profile/:username",
         "name": "profile",
-        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\profile",
-        "_name": "_12eaf550"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\profile"
       },
       {
         "path": "/settings",
         "name": "settings",
-        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\settings",
-        "_name": "_6c063654"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\settings"
       },
       {
         "path": "/editor",
         "name": "editor",
-        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\editor",
-        "_name": "_7a4b1844"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\editor"
       },
       {
         "path": "/article/:slug",
         "name": "article",
-        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\article",
-        "_name": "_45566eb6"
+        "component": "D:\\\\Code\\\\SSR\\\\blog\\\\blog-nuxt\\\\pages\\\\article"
       }
-    ],
-    "_name": "_62ad64ca"
+    ]
   }
 ]
