@@ -9,7 +9,7 @@ const TOKEN_INVALID = "Token认证失败，请重新登录";
 const NETWORK_ERROR = "网络请求异常，请稍后重试";
 // 创建请求对象
 export const request = axios.create({
-  baseURL: "http://localhost:3333"
+  baseURL: "http://localhost:3000"
 });
 
 // 通过插件机制获取到上下文对象（query、params、req、res、app、store...）
